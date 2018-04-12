@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css" />
+  <title>Github Finder</title>
+</head>
+
+<body>
+
+  <div class="uk-background-secondary uk-padding-small uk-light">
+    <h1 class="uk-h4 uk-margin-remove">GitHub Finder</h1>
+  </div>
+
+  <div class="uk-container-small uk-padding-small uk-margin-auto uk-margin-top js-container">
+    <div class="uk-card uk-padding th-border">
+      <div class="uk-card-title">
+        <h3 class="uk-margin-remove-bottom">Quick user search</h1>
+      </div>
+      <p class="uk-margin-remove-top">Enter user name to get user profile and list of repositories</p>
+      <form>
+        <input type="text" class="uk-input js-input">
+      </form>
+    </div>
+
+    <div class="js-profile uk-margin-medium-top th-display-none">
+      <h2>Profile details</h2>
+      <div class="js-profile-card"></div>
+    </div>
+
+    <div class="js-repos uk-margin-medium-top th-display-none">
+      <h2>Repositories list</h2>
+      <div class="uk-card uk-card-body th-border">
+        <ul class="uk-list uk-list-divider">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js" type="module"></script>
+</body>
+
+</html>
